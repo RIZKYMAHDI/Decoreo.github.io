@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="Pics/DC.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoreo - Metode Pembayaran</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="CSS/method.css">
+    <link rel="stylesheet" href="CSS/bohead.css">
+</head>
+
+<body>  
+    <header class="d-flex justify-content-between align-items-center shadow-sm p-3 mb-4 fixed-top" style="background-color: #ffe6b0;">
+        <div class="header-title logo">
+            D E C O R E O
+        </div>
+        <nav class="nav">
+            <a class="nav-link" href="9Panduan.html">Panduan</a>
+            <a class="nav-link" href="5KuisHasil.html">Kuis Gaya</a>
+            <a class="nav-link" href="Desainer.html">Desainer</a>
+            <a class="nav-link" href="6Proyek.html">Proyek</a>
+            <a class="nav-link" href="halaman artikel.html">Artikel</a>
+            <a class="nav-link" href="8Tentang kami.html">Tentang Kami</a>
+        </nav>
+    </header>
+
+    <!-- Form Pembayaran -->
+    <div class="container mt-5 pt-5">
+        <div class="payment-container">
+            <form id="payment-form">
+                <h5 class="payment-title">Pembayaran</h5>
+                <p class="payment-instruction">Pilih Metode Pembayaran!</p>
+
+                <div class="payment-options">
+                    <p class="payment-amount">NOMINAL YANG HARUS DIBAYAR: <span>Rp XX.XXX.XXX,XX</span></p>
+
+                    <h6 class="payment-method-title">E-Wallet</h6>
+                    <ul class="payment-method-list">
+                        <li>
+                            <input type="radio" id="ovo" name="payment-method" value="ovo">
+                            <label for="ovo">OVO</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="shopeepay" name="payment-method" value="shopeepay">
+                            <label for="shopeepay">ShopeePay</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="gopay" name="payment-method" value="gopay">
+                            <label for="gopay">GoPay</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="paypal" name="payment-method" value="paypal">
+                            <label for="paypal">PayPal</label>
+                        </li>
+                    </ul>
+
+                    <h6 class="payment-method-title">Mobile Banking</h6>
+                    <ul class="payment-method-list">
+                        <li>
+                            <input type="radio" id="bri" name="payment-method" value="bri">
+                            <label for="bri">BRI Mobile Banking</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="bca" name="payment-method" value="bca">
+                            <label for="bca">BCA Mobile Banking</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="bni" name="payment-method" value="bni">
+                            <label for="bni">BNI Mobile Banking</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="bsi" name="payment-method" value="bsi">
+                            <label for="bsi">BSI Mobile Banking</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="mandiri" name="payment-method" value="mandiri">
+                            <label for="mandiri">Mandiri Mobile Banking</label>
+                        </li>
+                    </ul>
+
+                    <p class="promo-code-label">Kode Promo:</p>
+                    <input type="text" id="promo-code" name="promo-code" placeholder="Masukkan kode promo" class="promo-code-input">
+
+                </div>
+
+                <div>
+                    <button type="button" id="submit-button" class="submit-button btn w-100">Bayar</button>
+                </div>       
+            </form> 
+        </div>
+    </div>
+
+    <!-- Popup Konfirmasi Pembayaran -->
+    <div id="quiz-popup" class="popup">
+        <div class="popup-content">
+            <h1>Pembayaran Berhasil !</h1>
+            <p>Pembayaran Anda telah berhasil dilakukan.</p>
+            <a href="Bukti Bayar.html" class="btn btn-primary">Cetak Bukti Pembayaran</a>
+        </div>
+    </div>    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/method.js"></script> 
+</body>
+</html>

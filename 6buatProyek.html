@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="shortcut icon" type="x-icon" href="Pics/DC.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoreo - Buat Proyek</title>
+    <link rel="stylesheet" href="CSS/bohead.css">
+    <link rel="stylesheet" href="CSS/buatProyek.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center shadow-sm p-3 mb-4 fixed-top" style="background-color: #ffe6b0;">
+        <div class="header-title logo">
+            D E C O R E O
+        </div>
+        <nav class="nav">
+            <a class="nav-link" href="9Panduan.html">Panduan</a>
+            <a class="nav-link" href="5KuisHasil.html">Kuis Gaya</a>
+            <a class="nav-link" href="Desainer.html">Desainer</a>
+            <a class="nav-link" href="6Proyek.html">Proyek</a>
+            <a class="nav-link" href="halaman artikel.html">Artikel</a>
+            <a class="nav-link" href="8Tentang kami.html">Tentang Kami</a>
+        </nav>
+    </header>
+
+    <div class="centered-container">
+        <h2>Buat Proyek Baru</h2>
+        <form method="POST" action="PHP/buat_proyek.php">
+            <label for="building-type">Jenis Bangunan:</label>
+            <input type="text" id="building-type" name="buildingType" required><br>
+
+            <label for="design-style">Gaya Desain:</label>
+            <input type="text" id="design-style" name="designStyle" required><br>
+
+            <label for="budget">Anggaran (Rp):</label>
+            <input type="number" id="budget" name="budget" required><br>
+
+            <label for="estimated-time">Estimasi Waktu (Hari):</label>
+            <input type="number" id="estimated-time" name="estimatedTime" required><br>
+
+            <label for="designer-choice">Pilih Desainer:</label>
+            <select id="designer-choice" name="designerChoice" required>
+                <option value="Rizky Mahdi">Rizky Mahdi</option>
+                <option value="Arya Purwanto">Arya Purwanto</option>
+                <option value="Andyna Aulia">Andyna Aulia</option>
+                <option value="Nicki Dewi">Nicki Dewi</option>
+                <option value="Yusi Maulida">Yusi Maulida</option>
+            </select><br><br>
+
+            <input type="submit" value="Buat Proyek">
+        </form>
+    </div>
+</body>
+</html>

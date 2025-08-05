@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Aktivitas dan Preferensi</title>
+
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f0f0; margin: 0; padding: 0;">
+    <header style="width: 100%; background-color: #ffe6b0; padding: 10px 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); position: fixed; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center; z-index: 1000; box-sizing: border-box;">
+        <div class="header-logo" style="font-size: 15px; font-family: 'Arena BC', sans-serif;">
+            D E C O R E O
+        </div>
+        <nav class="header-nav" style="display: flex;">
+            <a href="4Kuis2.html" style="margin: 0 10px; text-decoration: none; color: black;">Panduan</a>
+            <a href="4Kuis2.html" style="margin: 0 10px; text-decoration: none; color: black;">Portofolio</a>
+            <a href="4Kuis2.html" style="margin: 0 10px; text-decoration: none; color: black;">Kuis Gaya</a>
+            <a href="4Kuis2.html" style="margin: 0 10px; text-decoration: none; color: black;">Proyek Saya</a>
+            <a href="4Kuis2.html" style="margin: 0 10px; text-decoration: none; color: black;">Artikel</a>
+        </nav>
+    </header>
+
+    <div style="background-color: #fff; border-radius: 8px; padding: 16px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h1 style="color: #333; font-size: 24px;">Kuis Aktivitas dan Preferensi</h1>
+        <form id="quizForm" action="5KuisHasil.html">
+            <div style="margin: 16px 0; font-size: 12px;">
+                <h2>1. Apa jenis aktivitas yang paling Anda nikmati di waktu luang?</h2>
+                <label style="font-size: 16px;"><input type="radio" name="activity" value="Membaca"> A. Membaca</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="activity" value="Berolahraga"> B. Berolahraga</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="activity" value="Menonton film"> C. Menonton film</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="activity" value="Berkumpul dengan teman"> D. Berkumpul dengan teman</label>
+            </div>
+
+            <div style="margin: 16px 0; font-size: 12px;">
+                <h2>2. Seberapa sering Anda bepergian?</h2>
+                <label style="font-size: 16px;"><input type="radio" name="travel" value="Setiap bulan"> A. Setiap bulan</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="travel" value="Setiap tahun"> B. Setiap tahun</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="travel" value="Kadang-kadang"> C. Kadang-kadang</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="travel" value="Jarang"> D. Jarang</label>
+            </div>
+
+            <div style="margin: 16px 0; font-size: 12px;">
+                <h2>3. Apa sifat yang paling sesuai dengan diri Anda?</h2>
+                <label style="font-size: 16px;"><input type="radio" name="personality" value="Ekstrovert"> A. Ekstrovert</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="personality" value="Introvert"> B. Introvert</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="personality" value="Ambivert"> C. Ambivert</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="personality" value="Sosiopath"> D. Sosiopath</label>
+            </div>
+
+            <div style="margin: 16px 0; font-size: 12px;">
+                <h2>4. Bagaimana Anda menghadapi masalah?</h2>
+                <label style="font-size: 16px;"><input type="radio" name="problemSolving" value="Mencari solusi"> A. Mencari solusi</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="problemSolving" value="Menghindar"> B. Menghindar</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="problemSolving" value="Mencari bantuan"> C. Mencari bantuan</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="problemSolving" value="Merenungkan masalah"> D. Merenungkan masalah</label>
+            </div>
+
+            <div style="margin: 16px 0; font-size: 12px;">
+                <h2>5. Seberapa fleksibel Anda terhadap anggaran proyek jika ada perubahan atau tambahan kebutuhan?</h2>
+                <label style="font-size: 16px;"><input type="radio" name="budgetFlexibility" value="Tidak fleksibel"> A. Tidak fleksibel, harus sesuai anggaran awal</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="budgetFlexibility" value="Sedikit fleksibel"> B. Bisa sedikit fleksibel jika diperlukan</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="budgetFlexibility" value="Fleksibel"> C. Fleksibel, selama hasilnya memuaskan</label>
+            </div>
+
+            <div style="margin: 16px 0; font-size: 12px;">
+                <h2>6. Apakah Anda ingin mengikuti rekomendasi desainer untuk produk dan furnitur, atau memilih sendiri?</h2>
+                <label style="font-size: 16px;"><input type="radio" name="designerPreference" value="Rekomendasi desainer"> A. Saya lebih suka rekomendasi desainer</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="designerPreference" value="Kombinasi"> B. Kombinasi rekomendasi desainer dan pilihan pribadi</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="designerPreference" value="Pilih sendiri"> C. Saya lebih suka memilih sendiri sesuai anggaran</label>
+            </div>
+
+            <div style="margin: 16px 0; font-size: 12px;">
+                <h2>7. Berapa besar Anda bersedia mengeluarkan budget untuk jasa desainer interior?</h2>
+                <label style="font-size: 16px;"><input type="radio" name="budget" value="Di bawah Rp20 juta"> A. Di bawah Rp20 juta</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="budget" value="Rp20 juta - Rp30 juta"> B. Rp20 juta - Rp30 juta</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="budget" value="Rp30 juta - Rp35 juta"> C. Rp30 juta - Rp35 juta</label><br>
+                <label style="font-size: 16px;"><input type="radio" name="budget" value="Di atas Rp35 juta"> D. Di atas Rp35 juta</label>
+            </div>
+
+            <button type="submit" style="padding: 10px 15px; background-color: #ffe6b0; color: black; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Kirim</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+.quiz-title {
+    text-align: center; 
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px; 
+    color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #5a6478; 
+}
+
+header {
+    width: 100%;
+    background-color: #ffe6b0;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.header-logo {
+    font-size: 15px;
+    font-family: 'Arena BC', sans-serif;
+}
+
+.header-nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(18, 18, 18);
+}
+
+.container {
+    background-color: #efe8e8;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 80px auto 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center; /* Centering text in the container */
+}
+
+.container h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.budget-options {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.budget-options label {
+    margin: 10px 0; 
+    font-size: 16px; 
+    display: flex; 
+    align-items: center; 
+}
+
+.budget-options input[type="radio"] {
+    margin-left: 10px; 
+}
+
+.button {
+    margin: 0 10px;
+    padding: 10px 15px; 
+    background-color: #ac8f24;
+    color: #fff;
+    border: 1px solid #4e4444;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.selected {
+    border: 4px solid #5a6478;
+}
+
+.submit-container {
+    text-align: center; 
+    margin-top: 20px;
+}
+.submit-button {
+    margin-top: 20px;
+    width: 100px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.progress-container {
+    width: 80%;
+    background-color: #ddd;
+    border-radius: 25px;
+    margin: 20px auto;
+    height: 20px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #ffc107; 
+    border-radius: 25px;
+    transition: width 0.3s ease-in-out;
+}

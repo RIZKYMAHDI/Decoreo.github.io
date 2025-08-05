@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoreo - Kuis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="CSS/bohead.css">
+    <link rel="stylesheet" href="CSS/3Kuis.css">
+</head>
+
+<header class="d-flex justify-content-between align-items-center shadow-sm p-3 mb-4 fixed-top" style="background-color: #ffe6b0;">
+    <div class="header-title logo">
+     D E C O R E O
+    </div>
+    <nav class="nav">
+        <a class="nav-link" href="9Panduan.html">Panduan</a>
+        <a class="nav-link" href="5KuisHasil.html">Kuis Gaya</a>
+        <a class="nav-link" href="Desainer.html">Desainer</a>
+        <a class="nav-link" href="6Proyek.html">Proyek</a>
+        <a class="nav-link" href="halaman artikel.html">Artikel</a>
+        <a class="nav-link" href="8Tentang kami.html">Tentang Kami</a>
+</nav>
+</header>
+
+<body>    
+    <div class="progress-container">
+        <div class="progress-bar" id="quiz-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0;"></div>
+    </div>
+    
+    <div class="kontainer-kuis">
+        <div class="kontainer-belakang">
+            <h1>Pilih yang kamu suka!</h1>
+            <h2>This Or That</h2>
+
+            <div class="kontainer-pertanyaan" id="kontainer-pertanyaan">
+                <div class="pilihan">
+                    <img src="path/to/image1.jpg" alt="Option 1">
+                    <div class="teks-pilihan">Option 1</div>
+                </div>
+                <div class="pilihan">
+                    <img src="path/to/image2.jpg" alt="Option 2">
+                    <div class="teks-pilihan">Option 2</div>
+                </div>
+            </div>
+        </div>
+
+        <form action="4Kuis.html" method="get">
+            <div id="kontainer-hasil" class="kontainer-hasil" style="display: none;">
+                <button id="tombol-hasil" class="btn btn-primary btn-lg">Lanjutkan Kuis</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/3Kuis.js"></script>
+</body>
+</html>

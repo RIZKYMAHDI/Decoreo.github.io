@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Aktivitas dan Preferensi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="CSS/bohead.css"> 
+    <link rel="stylesheet" href="CSS/4Kuis.css"> 
+</head>
+
+<header class="d-flex justify-content-between align-items-center shadow-sm p-3 mb-4 fixed-top" style="background-color: #ffe6b0;">
+    <div class="header-title logo">
+     D E C O R E O
+    </div>
+    <nav class="nav">
+        <a class="nav-link" href="9Panduan.html">Panduan</a>
+        <a class="nav-link" href="5KuisHasil.html">Kuis Gaya</a>
+        <a class="nav-link" href="Desainer.html">Desainer</a>
+        <a class="nav-link" href="6-1myproject.html">Proyek</a>
+        <a class="nav-link" href="halaman artikel.html">Artikel</a>
+        <a class="nav-link" href="8Tentang kami.html">Tentang Kami</a>
+    </nav>
+</header>
+
+<body>  
+    <div class="quiz-title text-center my-5">Decoquiz</div>
+
+    <!-- Progress bar container -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <form id="dreamHouseForm" action="5KuisHasil.html" method="get">
+        <div class="container">
+            <p>Apakah Anda menyukai desain interior yang unik dan tidak biasa?</p>
+            <div class="radio-group">
+                <label><input type="radio" name="q1" value="ya"> Ya</label>
+                <label><input type="radio" name="q1" value="tidak"> Tidak</label>
+            </div>
+        </div>
+
+        <div class="container">
+            <p>Apakah Anda menyukai penggunaan bahan-bahan alami seperti kayu dan batu alam?</p>
+            <div class="radio-group">
+                <label><input type="radio" name="q2" value="ya"> Ya</label>
+                <label><input type="radio" name="q2" value="tidak"> Tidak</label>
+            </div>
+        </div>
+
+        <div class="container">
+            <p>Apakah Anda lebih suka desain interior yang fungsional dan efisien?</p>
+            <div class="radio-group">
+                <label><input type="radio" name="q3" value="ya"> Ya</label>
+                <label><input type="radio" name="q3" value="tidak"> Tidak</label>
+            </div>
+        </div>
+
+        <div class="container">
+            <p>Apakah Anda menyukai penggunaan warna-warna cerah dan berani dalam desain interior?</p>
+            <div class="radio-group">
+                <label><input type="radio" name="q4" value="ya"> Ya</label>
+                <label><input type="radio" name="q4" value="tidak"> Tidak</label>
+            </div>
+        </div>
+
+        <div class="container">
+            <p>Apakah Anda lebih suka ruangan dengan pencahayaan yang redup dan suasana yang intim?</p>
+            <div class="radio-group">
+                <label><input type="radio" name="q5" value="ya"> Ya</label>
+                <label><input type="radio" name="q5" value="tidak"> Tidak</label>
+            </div>
+        </div>
+
+        <div class="submit-container text-center">
+            <button id="submit" class="btn btn-warning">Kirim</button>
+        </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const radioGroups = document.querySelectorAll('input[type="radio"]');
+        const progressBar = document.getElementById('progressBar');
+
+        const totalQuestions = 5;
+        let answeredQuestions = 0;
+
+        function updateProgressBar() {
+            const progress = (answeredQuestions / totalQuestions) * 100;
+            progressBar.style.width = progress + '%';
+        }
+
+        radioGroups.forEach(radio => {
+            radio.addEventListener('change', (event) => {
+                if (!event.target.closest('.container').classList.contains('answered')) {
+                    answeredQuestions++;
+                    event.target.closest('.container').classList.add('answered');
+                }
+                updateProgressBar();
+            });
+        });
+    </script>
+</body>
+</html>

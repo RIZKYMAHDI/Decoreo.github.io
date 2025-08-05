@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="Pics/DC.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoreo - Pembayaran</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/bohead.css">
+    <link rel="stylesheet" href="CSS/payment.css">
+</head>
+<body>  
+    <header class="d-flex justify-content-between align-items-center shadow-sm p-3 mb-4 fixed-top" style="background-color: #ffe6b0;">
+        <div class="header-title logo">
+            D E C O R E O
+        </div>
+        <nav class="nav">
+            <a class="nav-link" href="9Panduan.html">Panduan</a>
+            <a class="nav-link" href="5KuisHasil.html">Kuis Gaya</a>
+            <a class="nav-link" href="Desainer.html">Desainer</a>
+            <a class="nav-link" href="6Proyek.html">Proyek</a>
+            <a class="nav-link" href="halaman artikel.html">Artikel</a>
+            <a class="nav-link" href="8Tentang kami.html">Tentang Kami</a>
+        </nav>
+    </header>
+    <div class="payment-container container mx-auto p-4">
+        <form action="method.html" id="checkoutForm">
+            <h5 class="payment-title">Detail Customer</h5>
+
+            <label for="name" class="form-label">
+                <span>Nama</span>
+                <input type="text" id="name" placeholder="Nama" required class="form-input">
+            </label>
+
+            <label for="email" class="form-label">
+                <span>G-mail</span>
+                <input type="email" id="email" placeholder="Email" required class="form-input">
+            </label>
+
+            <label for="phone" class="form-label">
+                <span>Telepon</span>
+                <input type="text" id="phone" placeholder="No. HP" required class="form-input">
+            </label>
+
+            <div>
+                <button class="checkout-button w-100" type="submit" id="checkout-button" value="checkout">Berikutnya</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

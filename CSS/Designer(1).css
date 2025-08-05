@@ -1,0 +1,87 @@
+/* General body styling */
+body {
+    font-family: 'Times New Roman', Times,serif;
+    background-color: #5a6478;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.designer-option {
+    width: 50%; /* Mengatur lebar card agar responsif */
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+.designer-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.designer-images img {
+    width: 48%; /* Membuat kedua gambar sejajar dengan lebar proporsional */
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.container h2 {
+    color: #ffffff; 
+    font-size: 2em; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.designer-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.designer-info p {
+    font-size: 1em;
+    color: #343434;
+    margin-bottom: 10px;
+}
+
+.portfolio-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.portfolio-button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .designer-option {
+        width: 90%; /* Mengurangi lebar card agar sesuai pada perangkat kecil */
+    }
+
+    .designer-images {
+        flex-direction: column;
+    }
+
+    .designer-images img {
+        width: 100%; /* Membuat gambar full-width pada perangkat kecil */
+        margin-bottom: 15px;
+    }
+}

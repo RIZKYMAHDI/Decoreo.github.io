@@ -1,0 +1,69 @@
+/* Style untuk body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5a6478;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* Style untuk konten utama */
+.main-content {
+    max-width: 800px;
+    margin: 120px auto 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Style untuk heading */
+h1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffe6b0;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+}
+
+ul li div {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 15px; 
+}
+
+ul li img {
+    max-width: 450px;
+    border: 3px solid #ffe6b0;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    margin: 0;
+}

@@ -1,0 +1,53 @@
+
+header {
+    width: 100%;
+    background-color: #ffe6b0;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+header .logo {
+    font-size: 15px;
+    font-family: 'Arena BC', sans-serif;
+    letter-spacing: 0;
+}
+
+header nav {
+    margin-right: 20px;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+header, header .logo {
+    color: #333;
+}
+
+header nav, header nav a {
+    transition: color 0.3s; 
+}
+
+header nav a:hover {
+    color: #ff7f50; 
+}
+
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 18px; /* Mengecilkan font logo jika layar mengecil */
+    }
+    .nav a {
+        font-size: 14px; /* Mengecilkan font link di layar lebih kecil */
+        margin: 0 5px; /* Mengurangi margin untuk ruang lebih pada layar kecil */
+    }
+}

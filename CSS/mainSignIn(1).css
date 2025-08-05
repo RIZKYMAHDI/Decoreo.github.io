@@ -1,0 +1,58 @@
+/* mainSignIn.css */
+.body {
+    background-color: #5a6478; /* Warna latar belakang seluruh halaman */
+    margin: 0; /* Menghilangkan margin default */
+}
+
+.flex-center {
+    flex: 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 70px; /* Menyesuaikan padding untuk header tetap */
+}
+
+.main-content {
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    width: 300px; 
+    text-align: center; 
+}
+
+.main-content h1 {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+    width: 90%; 
+    padding: 10px; 
+    margin: 10px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+label {
+    display: block; 
+    text-align: left; 
+    margin: 10px 0; 
+}
+
+button {
+    background-color: #666; 
+    color: white; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 4px; 
+    width: 100%; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #ffe6b0; /* Mengubah warna saat hover */
+    color: black; 
+}

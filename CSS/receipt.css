@@ -1,0 +1,32 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../Pics/methodbac.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+
+.content {
+    padding: 20px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: rgb(67, 41, 41);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}

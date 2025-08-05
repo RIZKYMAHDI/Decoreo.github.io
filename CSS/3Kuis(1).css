@@ -1,0 +1,73 @@
+nav a {
+    margin: 0 15px;
+    color: inherit;
+}
+h1 {
+    font-size: 36px;
+    font-family: 'Arena BC', sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+h2 {
+    text-align: center; 
+}
+
+.kontainer-pertanyaan {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 30px;
+    gap: 20px; 
+}
+.pilihan {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 250px; 
+}
+.pilihan img {
+    width: 100%;  
+    max-width: 250px; 
+    max-height: 250px;
+    border-radius: 10px;
+}
+.pilihan .teks-pilihan {
+    text-align: center; 
+    margin-top: 10px; 
+    font-size: 18px;
+}
+.kontainer-kuis {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 50px; 
+}
+.fixed-button {
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #eee;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+.pilihan img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.progress-container {
+    width: 80%;
+    margin: 50px auto 15px;
+    height: 20px;
+    background-color: #f3f3f3;
+}
+.progress-bar {
+    background-color: #ffc107; 
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+    border-radius: 15px; 
+}
+

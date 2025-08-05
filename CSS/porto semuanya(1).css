@@ -1,0 +1,219 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../Pics/portoaryabac.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+body.page2 {
+    font-family: Arial, sans-serif;
+    background-image: url("../Pics/portoaryabac.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+body.page3 {
+    font-family: Arial, sans-serif;
+    background-image: url("../Pics/portonanabac.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+body.page4 {
+    font-family: Arial, sans-serif;
+    background-image: url("../Pics/portonikibac.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+body.page5 {
+    font-family: Arial, sans-serif;
+    background-image: url("../Pics/portoyusibac.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffe6b0; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 15px; 
+    position: fixed; 
+    width: 100%; 
+    height: 15px;
+    z-index: 1000; 
+}
+
+.header-title {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #333; 
+}
+
+nav {
+    display: flex; 
+}
+
+.nav-link {
+    color: #333; 
+    text-decoration: none; 
+    margin-left: 20px; 
+    font-size: 16px; 
+    font-weight: 500; 
+    transition: color 0.3s ease; 
+}
+
+.nav-link:hover {
+    color: #746b69; 
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.profile-card {
+    flex-basis: 30%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile-description {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.collaboration-button {
+    background-color: #c7c28e;
+    color: #fff;
+}
+
+.collaboration-button:hover {
+    background-color: #b3b28e;
+    color: black;
+}
+
+.content-card {
+    flex-basis: 65%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.content-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content-image {
+    width: 220px;
+    height: 150px;
+    margin: 0;
+    border: 1px solid #ddd;
+    object-fit: cover;
+}
+
+.content-text {
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.content-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.content-description {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button-container form {
+    display: inline-block;
+}
+
+.button-container button[type="submit"] {
+    background-color: #3a2c0d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.button-container button[type="submit"]:hover {
+    background-color: #4e5669;
+}
+
+.btn-custom {
+    background-color: #c7c28e; 
+    color: white; 
+
+}
+
+.btn-custom:hover {
+    background-color: #b3b28e; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+    .profile-card, .content-card {
+        flex-basis: 100%; 
+        max-width: 100%; 
+    }
+}

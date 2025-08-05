@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="shortcut icon" type="x-icon" href="Pics/DC.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoreo - Buat Proyek</title>
+    <link rel="stylesheet" href="CSS/bohead.css"> <!-- External CSS file -->
+    <link rel="stylesheet" href="CSS/mainproyek1-2.css"> <!-- External CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+</head>
+ 
+    <header class="d-flex justify-content-between align-items-center shadow-sm p-3 mb-4 fixed-top" style="background-color: #ffe6b0;">
+        <div class="header-title logo">
+         D E C O R E O
+        </div>
+        <nav class="nav">
+            <a class="nav-link" href="9Panduan.html">Panduan</a>
+            <a class="nav-link" href="5KuisHasil.html">Kuis Gaya</a>
+            <a class="nav-link" href="Desainer.html">Desainer</a>
+            <a class="nav-link" href="6-1myproject.html">Proyek</a>
+            <a class="nav-link" href="halaman artikel.html">Artikel</a>
+            <a class="nav-link" href="8Tentang kami.html">Tentang Kami</a>
+        </nav>
+    </header>
+    <body> 
+    <div class="centered-container">
+        <h2>Buat Proyek Baru</h2>
+        <form id="newProjectForm">
+            <label for="building-type">Jenis Bangunan:</label>
+            <input type="text" id="building-type" name="buildingType" required><br>
+
+            <label for="style">Gaya Desain:</label>
+            <input type="text" id="style" name="style" required><br>
+
+            <label for="budget">Anggaran (Rp):</label>
+            <input type="number" id="budget" name="budget" required><br>
+
+            <label for="time">Estimasi Waktu (Hari):</label>
+            <input type="number" id="time" name="time" required><br>
+
+            <label for="designer">Pilih Desainer:</label>
+            <select id="designer" name="designer" required>
+                <option value="Pilih Desainer">Pilih Desainer</option>
+                <option value="Desainer">Rizky Mahdi </option>
+                <option value="Desainer">Arya Purwanto </option>
+                <option value="Desainer">Andyna Aulia </option>
+                <option value="Desainer">Nicki Dewi </option>
+                <option value="Desainer">Yusi Maulida </option>
+
+            </select><br><br>
+
+            <input type="submit" value="Buat Proyek">
+        </form>
+    </div>
+
+    <script src="JS/mainproyek1-2.js"></script>
+</body>
+</html>

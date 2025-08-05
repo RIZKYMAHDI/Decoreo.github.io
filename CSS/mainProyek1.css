@@ -1,0 +1,223 @@
+body {
+    background-color: #5a6478; /* Background color for the body */
+    margin: 0; /* Remove default margin */
+}
+
+.title-container {
+    text-align: center;
+    margin: 0 1px 70px;
+}
+
+.title-box {
+    display: inline-block;
+    background-color: #ffe6b0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.project-container {
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #ffe6b0;
+    border-radius: 8px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.project-box {
+    width: 400px;
+    height: 250px;
+    background-color: #ddd;
+    margin-right: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.project-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.designer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.designer-box {
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 100px;
+}
+
+.designer-details {
+    flex: 1;
+}
+
+.designer-image-container {
+    flex-shrink: 0;
+}
+
+.designer-image {
+    width: 80px;
+    height: 100px;
+    border-radius: 10%;
+}
+
+.payment-status {
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 50px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.payment-details {
+    flex: 1;
+}
+
+.payment-status-text {
+    color: #ff0000;
+}
+
+.details-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: rgb(100, 100, 200);
+    text-decoration: underline;
+    font-size: 16px;
+}
+body {
+    background-color: #5a6478;
+    margin: 0;
+}
+
+.centered-container {
+    text-align: center;
+    margin: 0 1px 70px;
+}
+
+.project-header {
+    display: inline-block;
+    background-color: #ffe6b0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    margin-top: 50px;
+}
+
+.project-container {
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgba(255, 230, 176, 0.82);
+    border-radius: 8px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.project-box {
+    width: 400px;
+    height: 250px;
+    background-color: #ddd;
+    margin-right: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.project-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.designer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.designer-box {
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 100px;
+}
+
+.designer-info {
+    flex: 1;
+}
+
+.designer-image-container {
+    flex-shrink: 0;
+}
+
+.designer-image {
+    width: 80px;
+    height: 100px;
+    border-radius: 10%;
+}
+
+.payment-status {
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 50px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.payment-info {
+    flex: 1;
+}
+
+.payment-warning {
+    color: #ff0000;
+}
+
+.details-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: rgb(100, 100, 200);
+    text-decoration: underline;
+    font-size: 16px;
+}
